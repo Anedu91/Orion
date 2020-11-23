@@ -32,6 +32,9 @@
 
   &__circle {
     max-width: 450px;
+    @include respond-above(lg) {
+      max-width: 400px;
+    }
     @include respond-above(xl) {
       max-width: 550px;
     }

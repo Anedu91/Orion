@@ -7,6 +7,10 @@
   border-radius: 50%;
   width: 300px;
   height: 300px;
+  @include respond-above(lg) {
+    width: 250px;
+    height: 250px;
+  }
   @include respond-above(xl) {
     width: 23.375rem;
     height: 23.375rem;

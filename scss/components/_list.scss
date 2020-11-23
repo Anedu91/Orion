@@ -15,6 +15,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include respond-above(lg) {
+      width: 36px;
+      height: 36px;
+    }
+    @include respond-above(xl) {
+      width: 46px;
+      height: 46px;
+    }
   }
   &__text {
     margin-left: 0.5rem;
@@ -27,10 +35,16 @@
     font-size: 1.5rem;
     text-align: center;
     transform: translateY(-15%);
+    @include respond-above(lg) {
+      font-size: 1.1rem;
+    }
+    @include respond-above(xl) {
+      font-size: 1.5rem;
+    }
   }
   &__progress {
     margin-left: 1rem;
-    max-width: 20%;
+    max-width: 40%;
     width: 100%;
     & > * {
       margin-bottom: 0.5rem;

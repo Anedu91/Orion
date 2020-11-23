@@ -37,7 +37,7 @@ $breakpoints: (
       $breakpoints,
       $breakpoint
     ); // Write the media query.
-    @media (min-width: ($breakpoint-value - 1)) {
+    @media (min-width: ($breakpoint-value + 1)) {
       @content;
     }
     // If the breakpoint doesn't exist in the map.
@@ -45,4 +45,9 @@ $breakpoints: (
     // Log a warning.
     @warn "Invalid breakpoint: #{$breakpoint}.";
   }
+}
+/*GRADIENTS*/
+
+@mixin linearGradient($color1, $color2) {
+  background: linear-gradient(to right, $color1, $color2);
 }
