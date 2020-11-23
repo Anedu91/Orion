@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lightspin</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="container-fluid px-xxxl-5 px-3 pt-5">
+      <div class="row">
+        <aside class="col-xxxl-2 col-xl-3 col-md-6 order-xl-0 order-1">
+          <div class="p-3 bg-dark-blue br-5">
+            <h3 class="heading-4">Total earning</h3>
+            <p class="paragraph--flex">
+              <span class="heading-3">$12,875</span
+              ><span class="text-success"
+                ><svg class="icon--arrow icon--arrow__positive">
+                  <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                </svg>
+                10%</span
+              >
+            </p>
+            <p class="text-muted">Compared to <span>$21,490</span> last year</p>
+            <div id="chart">
+              <canvas id="barChart"></canvas>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-borderless">
+                <tbody>
+                  <tr>
+                    <th scope="row">Travel</th>
+                    <th class="text-muted">760</th>
+                    <th>2,540</th>
+                    <th>
+                      <svg class="icon--arrow icon--arrow__positive">
+                        <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                      </svg>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Presentation</th>
+                    <th class="text-muted">760</th>
+                    <th>2,540</th>
+                    <th>
+                      <svg class="icon--arrow icon--arrow__negative">
+                        <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                      </svg>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Business</th>
+                    <th class="text-muted">760</th>
+                    <th>2,540</th>
+                    <th>
+                      <svg class="icon--arrow icon--arrow__positive">
+                        <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                      </svg>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Finance</th>
+                    <th class="text-muted">760</th>
+                    <th>2,540</th>
+                    <th>
+                      <svg class="icon--arrow icon--arrow__positive">
+                        <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                      </svg>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Travel</th>
+                    <th class="text-muted">760</th>
+                    <th>2,540</th>
+                    <th>
+                      <svg class="icon--arrow icon--arrow__negative">
+                        <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                      </svg>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Startup</th>
+                    <th class="text-muted">760</th>
+                    <th>2,540</th>
+                    <th>
+                      <svg class="icon--arrow icon--arrow__positive">
+                        <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                      </svg>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Develop</th>
+                    <th class="text-muted">760</th>
+                    <th>2,540</th>
+                    <th>
+                      <svg class="icon--arrow icon--arrow__negative">
+                        <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                      </svg>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Product</th>
+                    <th class="text-muted">760</th>
+                    <th>2,540</th>
+                    <th>
+                      <svg class="icon--arrow icon--arrow__positive">
+                        <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                      </svg>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Design</th>
+                    <th class="text-muted">760</th>
+                    <th>2,540</th>
+                    <th>
+                      <svg class="icon--arrow icon--arrow__positive">
+                        <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                      </svg>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Illustration</th>
+                    <th class="text-muted">760</th>
+                    <th>2,540</th>
+                    <th>
+                      <svg class="icon--arrow icon--arrow__negative">
+                        <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                      </svg>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="p-3 mt-3 bg-fifty br-5">
+            <h3 class="heading-4">Total earning</h3>
+            <p class="paragraph--flex">
+              <span class="heading-2">$12,875</span
+              ><span class="text-success"
+                ><svg class="icon--arrow icon--arrow__positive">
+                  <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                </svg>
+                10%</span
+              >
+            </p>
+            <p class="">Compared to <span>$21,490</span> last year</p>
+            <div
+              class="px-4 py-3 d-flex align-center justify-content-between bg-fifty-dark br-5"
+            >
+              <p>Product <span class="heading-3 d-block">540</span></p>
+              <p>Views <span class="heading-3 d-block">136,350</span></p>
+            </div>
+          </div>
+        </aside>
+        <main class="col-xxxl-8 col-xxl-7 col-xl-6 order-xl-1 order-0 main">
+          <h1 class="heading-1 text-center text-white">Global Statistics</h1>
+          <div class="main__center">
+            <div class="widget__container">
+              <div class="statistic statistic--left">
+                <span class="list__icon">
+                  <svg class="icon--list">
+                    <use xlink:href="images/sprite.svg#icon-views"></use>
+                  </svg>
+                </span>
+                <span class="list__text">
+                  Views
+                  <span class="d-block list__value">41,978</span>
+                </span>
+              </div>
+              <div class="statistic statistic--right">
+                <span class="list__icon"
+                  ><svg class="icon--list">
+                    <use xlink:href="images/sprite.svg#icon-diamond"></use></svg
+                ></span>
+                <span class="list__text"
+                  >Sales <span class="d-block list__value">32,123</span></span
+                >
+              </div>
+              <div class="statistic statistic--bottom">
+                <span class="list__icon"
+                  ><svg class="icon--list">
+                    <use xlink:href="images/sprite.svg#icon-wave"></use></svg
+                ></span>
+                <span class="list__text"
+                  >Profitability
+                  <span class="d-block list__value">86%</span></span
+                >
+              </div>
+              <svg
+                width=""
+                height=""
+                viewBox="0 0 495 495"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="widget__circle"
+              >
+                <path
+                  d="M365.658 53.6669C321.827 26.9496 270.242 15.8608 219.304 22.207C168.366 28.5531 121.078 51.9602 85.1426 88.6152C49.2074 125.27 26.7426 173.013 21.4078 224.067C16.0729 275.12 28.1824 326.476 55.7635 369.768C83.3447 413.06 124.772 445.738 173.298 462.477C221.823 479.217 274.587 479.032 322.994 461.953C371.401 444.874 412.599 411.908 439.876 368.424C467.153 324.939 478.903 273.5 473.211 222.485"
+                  stroke="url(#paint0_linear)"
+                  stroke-width="40"
+                  stroke-dasharray="0.88 8.81"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear"
+                    x1="223.307"
+                    y1="31.8035"
+                    x2="319.63"
+                    y2="505.053"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#00E0FF" />
+                    <stop offset="1" stop-color="#096BFF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="widget">
+                <div class="circle-container">
+                  <div class="circle circle--big">
+                    <span class="circle__title">plan</span>
+                    <span class="circle__value">67</span>
+                  </div>
+                  <div class="circle circle--small">
+                    <span class="circle__title">month</span>
+                    <span class="circle__value circle__value--small">54</span>
+                  </div>
+                </div>
+                <div class="store">
+                  <span class="store__icon"
+                    ><svg class="icon--store">
+                      <use xlink:href="images/sprite.svg#icon-crown"></use></svg
+                  ></span>
+                  <span class="store__text"
+                    >Store dynamics
+                    <span class="d-block store__value">87</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__footer">
+            <ul class="list">
+              <li class="list__item">
+                <span class="list__icon"
+                  ><svg class="icon--list">
+                    <use xlink:href="images/sprite.svg#icon-balance"></use></svg
+                ></span>
+                <span class="list__text"
+                  >Balance <span class="d-block list__value">438</span></span
+                >
+                <div class="list__progress">
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 40%"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 70%"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 100%"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <span class="list__icon"
+                  ><svg class="icon--list">
+                    <use xlink:href="images/sprite.svg#icon-chart"></use></svg
+                ></span>
+                <span class="list__text"
+                  >Prediction <span class="d-block list__value">875</span></span
+                >
+              </li>
+              <li class="list__item">
+                <span class="list__icon"
+                  ><svg class="icon--list">
+                    <use xlink:href="images/sprite.svg#icon-chart"></use></svg
+                ></span>
+                <span class="list__text"
+                  >Pulse <span class="d-block list__value">875</span></span
+                >
+              </li>
+            </ul>
+          </div>
+        </main>
+        <aside class="col-xxl-2 col-xl-3 col-md-6 order-xl-2 order-2">
+          <div class="p-3 bg-dark-blue br-5">
+            <canvas id="lineChart"></canvas>
+            <h3 class="heading-4">Total earning</h3>
+            <p class="paragraph--flex">
+              <span class="heading-3">$12,875</span
+              ><span class="text-success"
+                ><svg class="icon--arrow icon--arrow__positive">
+                  <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                </svg>
+                10%</span
+              >
+            </p>
+            <p class="text-muted">Compared to <span>$21,490</span> last year</p>
+            <div class="">
+              <ul class="progress__list">
+                <li class="progress__item">
+                  <span class="progress__text">Sales</span>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 50%"
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </li>
+                <li class="progress__item">
+                  <span class="progress__text">Sales</span>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 50%"
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </li>
+                <li class="progress__item">
+                  <span class="progress__text">Sales</span>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 50%"
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bg-primary p-3 br-5 mt-3">
+            <canvas id="salesChart"></canvas>
+          </div>
+          <div class="bg-dark-blue p-3 br-5 mt-3">
+            <h3 class="heading-4">Total earning</h3>
+            <p class="paragraph--flex">
+              <span class="heading-2">$12,875</span
+              ><span class="text-success"
+                ><svg class="icon--arrow icon--arrow__positive">
+                  <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                </svg>
+                10%</span
+              >
+            </p>
+            <p class="">Compared to <span>$21,490</span> last year</p>
+          </div>
+          <div class="bg-dark-blue p-3 br-5 mt-3">
+            <div class="table-responsive">
+              <table class="table table-borderless table__small">
+                <tbody>
+                  <tr>
+                    <th scope="row">Presentation</th>
+                    <th class="text-muted">862</th>
+                    <th>
+                      <div class="chart__container">
+                        <canvas
+                          id="presentationChart"
+                          class="chart__small"
+                        ></canvas>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Development</th>
+                    <th class="text-muted">753</th>
+                    <th>
+                      <div class="chart__container">
+                        <canvas
+                          id="developmentChart"
+                          class="chart__small"
+                        ></canvas>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Research</th>
+                    <th class="text-muted">553</th>
+                    <th>
+                      <div class="chart__container">
+                        <canvas
+                          id="researchChart"
+                          class="chart__small"
+                        ></canvas>
+                      </div>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <script src="js/vendors/jquery-3.5.1.min.js"></script>
+    <script src="js/vendors/Chart.bundle.min.js"></script>
+    <script src="js/vendors/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

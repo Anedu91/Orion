@@ -1,0 +1,42 @@
+.widget {
+  position: absolute;
+  // border: 1px solid $white-color;
+  padding: 3rem;
+  border-radius: 50%;
+
+  &__container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    max-height: 700px;
+    height: 100%;
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+    @include respond-above(lg) {
+      margin-top: 0;
+      margin-bottom: 7rem;
+    }
+    @include respond-above(xl) {
+      max-width: 750px;
+      max-height: 750px;
+    }
+
+    @include respond-above(xxl) {
+      max-width: 900px;
+      max-height: 900px;
+    }
+  }
+
+  &__circle {
+    max-width: 450px;
+    @include respond-above(xl) {
+      max-width: 550px;
+    }
+    @include respond-above(xxl) {
+      max-width: 600px;
+    }
+  }
+}

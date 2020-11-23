@@ -1,0 +1,18 @@
+.chart {
+  &__container {
+    position: relative;
+    max-height: 50px;
+    height: 100%;
+    width: 80%;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    @include respond-above(lg) {
+      max-height: auto;
+    }
+  }
+  &__small {
+    max-width: 100%;
+    background: $black-color;
+  }
+}

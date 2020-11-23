@@ -1,0 +1,23 @@
+.icon {
+  &--arrow {
+    width: 14px;
+    height: 20px;
+
+    &__positive {
+      fill: $success-color;
+    }
+    &__negative {
+      fill: $danger-color;
+      transform: rotate(180deg);
+    }
+  }
+
+  &--list {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  &--store {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

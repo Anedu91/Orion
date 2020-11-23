@@ -1,0 +1,28 @@
+.statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+
+  &--left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  &--right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  &--bottom {
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    @include respond-above(md) {
+      bottom: -10%;
+    }
+    @include respond-above(lg) {
+      bottom: -3%;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  &__item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  &__icon {
+    border: 1px solid #6a6a9f;
+    width: 46px;
+    height: 46px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  &__value {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    transform: translateY(-15%);
+  }
+  &__progress {
+    margin-left: 1rem;
+    max-width: 20%;
+    width: 100%;
+    & > * {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

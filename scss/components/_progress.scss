@@ -1,0 +1,25 @@
+.progress {
+  background: #000;
+  height: 0.5rem;
+  border-radius: 100px;
+  flex: 1;
+  &-bar {
+    border-radius: 100px;
+    background-image: linear-gradient(
+      to right,
+      $primary-color,
+      $secondary-color
+    );
+  }
+
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    margin-right: 1rem;
+  }
+}

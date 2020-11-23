@@ -1,0 +1,17 @@
+{
+  "name": "lightspin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "chart.js": "^2.9.4",
+    "chartjs-plugin-stacked100": "^0.7.1"
+  }
+}
