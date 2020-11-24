@@ -10929,6 +10929,10 @@ body {
   border-radius: 10px;
 }
 
+.border-black-top {
+  border-top: 1px solid rgba(5, 5, 15, 0.5);
+}
+
 .chart__container {
   position: relative;
   max-height: 80px;
@@ -10946,6 +10950,10 @@ body {
 .chart__small {
   max-width: 100%;
   background: #05050f;
+}
+.chart__circle-container {
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .circle {
